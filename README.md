@@ -9,15 +9,15 @@
 |-----------|--------------|
 | [**Manual**](./Manual) | Manual detections and validation logic (super niche stuff for very specific detection logic). |
 | [**Queries**](./Queries) | Detection queries for major platforms. |
-| -[**CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
-| -[**Splunk**](./Queries/Splunk) | Splunk SPL content for behavioral and event-based detection. |
-| -[**Misc**](./Queries/Misc) | Some niche tools have custom query languages, I'll try to source these and put them here for a central reference (like Netography, Corelight, Sublime, etc.) |
+| [**/CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
+| [**/Splunk**](./Queries/Splunk) | Splunk SPL content for behavioral and event-based detection. |
+| [**/Misc**](./Queries/Misc) | Some niche tools have custom query languages, I'll try to source these and put them here for a central reference (like Netography, Corelight, Sublime, etc.) |
 | [**Research**](./Research) | Ongoing technical research and detection-related investigations. |
-| -[**Linux**](./Research/Linux) | Linux-specific. |
-| -[**MacOS**](./Research/MacOS) | macOS-specific. |
-| -[**Windows**](./Research/Windows) | Windows-specific. |
+| [**/Linux**](./Research/Linux) | Linux-specific. |
+| [**/MacOS**](./Research/MacOS) | macOS-specific. |
+| [**/Windows**](./Research/Windows) | Windows-specific. |
 | [**Scripts**](./Scripts) | Mostly custom atomics that aren't parsed and are a PITA to remove the test cases. Don't duplicate work just use these. |
-| -[**Atomics**](./Scripts/Atomics) | Custom atomic scripts for controlled TTP simulation. |
+| [**/Atomics**](./Scripts/Atomics) | Custom atomic scripts for controlled TTP simulation. |
 
 ---
 
