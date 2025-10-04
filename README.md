@@ -9,14 +9,11 @@
 ---
 
 ## Table of Contents
-1. [Project Overview](#-project-overview)
-2. [Motivation & Purpose](#-motivation--purpose)
-3. [Repository Structure](#-repository-structure)
-4. [How to Use](#-how-to-use)
-5. [Features](#-features)
-6. [Contributing](#-contributing)
-7. [Credits](#-credits)
-8. [License](#️-license)
+1. [Project Overview](#-roject-overview)
+2. [Motivation & Purpose](#motivation--purpose)
+3. [Repository Structure](#repository-structure)
+4. [How to Use](#how-to-use)
+5. [Conributions](#contributions)
 
 ---
 
