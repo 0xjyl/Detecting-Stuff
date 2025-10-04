@@ -1,38 +1,97 @@
-# Detecting-Stuff
-> A curated, evolving repository for **Cybersecurity Professionals** — custom queries, validated scripts, and practical research to make detection building faster, and collaborative.
+# Detecting-Stuff 
+
+> **A centralized repository for Detection Engineers —** practical detections, validated scripts, and deep research designed to accelerate the creation, testing, and sharing of detection logic.
+
+![Last Updated](https://img.shields.io/github/last-commit/0xjyl/Detecting-Stuff?label=Last%20Updated&style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/0xjyl/Detecting-Stuff?style=for-the-badge)
+![License](https://img.shields.io/github/license/0xjyl/Detecting-Stuff?style=for-the-badge)
 
 ---
 
-##  Navigation
-
-| Folder Name | Short Description |
-|--------------|-----------------|
-| [**Manual**](./Manual) | Manual detections and validation logic (super niche stuff for very specific detection logic). |
-| [**Queries**](./Queries) | Detection queries for major platforms. |
-| [**/CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
-| [**/Splunk**](./Queries/Splunk) | Splunk SPL content for behavioral and event-based detection. |
-| [**/Misc**](./Queries/Misc) | Some niche tools have custom query languages, I'll try to source these and put them here for a central reference (like Netography, Corelight, Sublime, etc.) |
-| [**Research**](./Research) | Ongoing technical research and detection-related investigations. |
-| [**/Linux**](./Research/Linux) | Linux-specific. |
-| [**/MacOS**](./Research/MacOS) | macOS-specific. |
-| [**/Windows**](./Research/Windows) | Windows-specific. |
-| [**Scripts**](./Scripts) | Mostly custom atomics that aren't parsed and are a PITA to remove the test cases. Don't duplicate work just use these. |
-| [**/Atomics**](./Scripts/Atomics) | Custom atomic scripts for controlled TTP simulation. |
+## Table of Contents
+1. [Project Overview](#-project-overview)
+2. [Motivation & Purpose](#-motivation--purpose)
+3. [Repository Structure](#-repository-structure)
+4. [How to Use](#-how-to-use)
+5. [Features](#-features)
+6. [Contributing](#-contributing)
+7. [Credits](#-credits)
+8. [License](#️-license)
 
 ---
 
-## Contribution Guidelines
+## Project Overview
+
+**Detecting-Stuff** is an open-source resource built for and by **Detection Engineers** and **Cybersecurity Professionals**.   
+It’s a centralized hub of ready-to-use detections, research, and practical scripts that bridge the gap between *theory* and *execution* in detection engineering, content/control validation, and purple teaming.
+
+This project contains:
+- **Custom queries** for major platforms like CrowdStrike and Splunk.  
+- **Reusable atomic scripts** for testing and validation, that are a bit more custom to the OS. 
+- **Manual detection guidance** for nuanced detection rules that have strict execution parameters. 
+- **Research repositories** focused on OS-specific detection/behavioral investigations. 
+
+---
+
+## Motivation & Purpose
+
+**Why this project exists:**
+- Detection Engineering is scattered — valuable detections are buried in wikis, slides, and forums. 
+- Many teams duplicate effort when building baselines or writing correlation rules. I hated that I had to build something that kind-of existed. 
+- Community knowledge should be **shared, validated, and accessible** — not lost to private backlogs or internal runbooks...
+    - I know this is a bit controversial but my personal theory is that attackers already have an advantage with tooling, resources, techniques, etc. Why not bolster our defenses together from individual contribution? Why hide this information?
+
+**What problem this solves:**
+- Centralizes detections from multiple ecosystems and knowledge bases (that aren't proprietary to any company internally). 
+- Provides reusable logic for detection engineers, purple teamers, incident responders, etc.
+- Encourages open collaboration for high-quality, tested detections.
+
+---
+
+## Repository Structure
+
+| Directory | Description |
+|------------|--------------|
+| [**Manual/**](./Manual) | Analyst-driven detections for complex validation chains. |
+| [**Queries/**](./Queries) | Core of the repo — organized queries for CrowdStrike, Splunk, and niche tools. |
+| ├── [**CrowdStrike/**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
+| ├── [**Splunk/**](./Queries/Splunk) | Splunk SPL detections for behavioral and event correlation. |
+| └── [**Misc/**](./Queries/Misc) | Custom detections for tools like Netography, Corelight, Sublime, etc. |
+| [**Research/**](./Research) | Technical research on Linux, macOS, and Windows detections. |
+| ├── [**Linux/**](./Research/Linux) | OS-specific detections and kernel-level behavior analysis. |
+| ├── [**MacOS/**](./Research/MacOS) | macOS-specific research, including [Zoom_Weird](./Research/MacOS/Zoom_Weird). |
+| └── [**Windows/**](./Research/Windows) | Detection logic and telemetry insights for Windows. |
+| [**Scripts/**](./Scripts) | Utility and atomic scripts for testing, validation, and automation. |
+| └── [**Atomics/**](./Scripts/Atomics) | Controlled TTP simulation and helper utilities. |
+
+---
+
+## How to Use
+
+You can **browse**, **copy**, or **download** anything you find useful for your environment. 
+
+**Support the Project**
+
+If this repository saves you time or sharpens your detections — give it a ⭐ and share it with another professional. Every contribution strengthens the community.
+
+---
+
+## Contributions
 
 Pull requests are welcomed — especially:
 
 - Custom detections validated in production environments.
 - Platform-specific research or TTP simulations.
+- Enhancements to logic, queries, scripts, research, etc.
 
-Guidelines:
+**Contribution Guidelines**
+
+This isn't entirely strict but having some coordination will help the stability of this project:
 
 - Follow folder structure and naming convention.
+- Ensure detections are tested or reproducible.
 - Include metadata headers and MITRE references.
-    - metadata headers:
+    - Example Metadata Block:
 
         ```yaml
         # metadata:
@@ -42,11 +101,3 @@ Guidelines:
         #   tags: [injection, defense-evasion, process]
         #   mitre_attack: T1055
         #   status: verified
-
-- Ensure detections are tested or reproducible.
-
----
-
-## Support the Project
-
-If this repository saves you time or sharpens your detections — give it a ⭐ and share it with another defender. Every contribution strengthens the community.
