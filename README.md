@@ -6,7 +6,7 @@
 ##  Navigation
 
 | Folder Name | Short Description |
-|-----------|--------------|
+|--------------|-----------------|
 | [**Manual**](./Manual) | Manual detections and validation logic (super niche stuff for very specific detection logic). |
 | [**Queries**](./Queries) | Detection queries for major platforms. |
 | [**/CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
