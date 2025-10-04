@@ -1,0 +1,35 @@
+# python to decode punycode URLs
+import time
+import codecs 
+
+def decode_punycode_domain(encoded_domain):
+    try:
+        if not encoded_domain.endswith('[dot]com'):
+            return "Invalid Format, please submit URL as 'xn--PUNYCODE[dot]com' < you are missing the '[dot]com'"
+        encoded_domain = encoded_domain[:-8]
+
+        if encoded_domain.startswith('xn--'):
+            encoded_domain = encoded_domain[4:]
+
+            decoded_label = codecs.decode(encoded_domain, 'punycode')
+        else:
+            return "Invalid Format, please submit URL as 'xn--PUNYCODE[dot]com' < you are missing the 'xn--'"
+        
+        return decoded_label + '.com'
+    except Exception as e:
+        return f"Failed to decode the URL: {str(e)}"
+
+    
+def main():
+    while True:
+
+        encoded_domain = input("Please enter the punycode URL to decode or type 'exit' to quit the program. \n")
+        if encoded_domain.lower() == 'exit':
+            print("Exiting program. Goodbye.")
+            break
+        decoded_domain = decode_punycode_domain(encoded_domain)
+        print("Decoded domain:", decoded_domain)
+        
+if __name__ == "__main__":
+    main()
+
