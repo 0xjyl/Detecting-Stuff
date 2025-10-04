@@ -51,15 +51,15 @@ This project contains:
 |------------|--------------|
 | [**Manual**](./Manual) | Niche items for specific attack processes/detection parameters. |
 | [**Queries**](./Queries) | Core of the repo — organized queries. |
-| -[**/CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
-| -[**/Splunk**](./Queries/Splunk) | Splunk (SPL) detections for behavioral and event correlation. |
-| -[**/Misc**](./Queries/Misc) | Custom detections for niche tools like Netography, Corelight, Sublime, etc. |
+| - [**/CrowdStrike**](./Queries/CrowdStrike) | CrowdStrike Query Language (CQL) detections. |
+| - [**/Splunk**](./Queries/Splunk) | Splunk (SPL) detections for behavioral and event correlation. |
+| - [**/Misc**](./Queries/Misc) | Custom detections for niche tools like Netography, Corelight, Sublime, etc. |
 | [**Research**](./Research) | Technical detection research |
-| -[**/Linux**](./Research/Linux) | Linux stuff |
-| -[**/MacOS**](./Research/MacOS) | MacOS stuff |
-| -[**/Windows**](./Research/Windows) | Windows stuff |
+| - [**/Linux**](./Research/Linux) | Linux stuff |
+| - [**/MacOS**](./Research/MacOS) | MacOS stuff |
+| - [**/Windows**](./Research/Windows) | Windows stuff |
 | [**Scripts**](./Scripts) | Various scripts for niche emulations/validations |
-| -[**/Atomics**](./Scripts/Atomics) | Custom atomics relevant to the OS / TTP |
+| - [**/Atomics**](./Scripts/Atomics) | Custom atomics relevant to the OS / TTP |
 
 ---
 
